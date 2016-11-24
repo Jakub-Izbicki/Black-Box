@@ -73,7 +73,7 @@ class MainLayout(BoxLayout):
         list_view = ListView(adapter=dict_adapter)
         self.add_widget(list_view)
 
-        list_view.adapter.data.extend([{str(i): {'file_name_text': i[0], 'is_selected': False, 'file_path_text': i[1]})
+        # list_view.adapter.data.extend([{str(i): {'file_name_text': i[0], 'is_selected': False, 'file_path_text': i[1]})
 
     def submit_student(self):
         new_name = self.first_txt_input.text + ' ' + self.last_txt_input.text
